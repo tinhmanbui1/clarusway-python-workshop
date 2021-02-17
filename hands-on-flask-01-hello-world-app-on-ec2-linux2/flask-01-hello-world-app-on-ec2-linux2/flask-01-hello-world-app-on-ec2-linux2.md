@@ -68,16 +68,27 @@ Followings are some of features of Flask Framework;
 
 - Create folder named `flask-01-hello-world-app-on-ec2-linux2` within `clarusway-python-workshop` repo
 
-- Create python file named `hello-world-app.py`
+- Create python file named `hello-world-app.py` 
 
 - Import Flask module.
 
+'from flask import Flask'
+
 - Create an object named `app` from imported Flask module.
+'app = Flask(__name__)'
 
 - Create a function `hello` which returns a string `Hello World`.
+'''python
+def hello():
+    return 'Hello World'
+'''
 
 - Assign a URL route the `hello` function with decorator `@app.route('/')`.
-
+'''python
+@app.route('/')
+def hello():
+    return 'Hello World'
+'''
 - Enable the web application to be run in main, so that it can be reached from anywhere from port 80.
 
 - Save the complete code as `hello-world-app.py` file under `hands-on/flask-01-hello-world-app-on-ec2-linux2` folder.
