@@ -81,16 +81,29 @@ When sending request, the client can send data with using different http methods
 - Connect to your instance with SSH.
 
 - Update the installed packages and package cache on your instance.
-
+```bash
+sudo yum update -y
+```
 - Install `Python 3` packages.
-
+```bash
+sudo yum install python3 -y
+```
 - Check the python3 version
-
+```bash
+python3 --version
+```
 - Install `Python 3 Flask` framework.
-
+```bash
+sudo pip3 install flask
+```
 - Install `flask_sqlalchemy`.
-
+```bash
+sudo pip3 install flask_sqlalchemy
+```
 - Install `flask_mysql`.
+```bash
+sudo pip3 install flask_mysql
+```
 
 ## Part 3 - Write a Sample Web Application with forms and database implementation on GitHub Repo
 
